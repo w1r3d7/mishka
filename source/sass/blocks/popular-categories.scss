@@ -1,0 +1,18 @@
+.popular-categories__item {
+  display: flex;
+  padding: 0 30px;
+  min-height: 100px;
+  background-color: #63d1bb;
+}
+
+.popular-categories__item--darken {
+  background-color: #56c3b2;
+}
+
+.popular-categories__title {
+  width: 130px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
