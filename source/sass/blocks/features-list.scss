@@ -1,14 +1,41 @@
 .features-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 .features-list__item {
+  position: relative;
+  width: 260px;
   padding-top: 60px;
+}
+
+.features-list__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.features-list__item--flower::before {
+  width: 32px;
+  height: 37px;
+  background-image: url("../../img/icon-feature-flower.svg");
 }
 
 .features-list__text {
   margin: 0;
   font-weight: bold;
+}
+
+
+
+
+@media (min-width: 1150px) {
+  .features-list {
+    padding: 0 175px;
+  }
 }

@@ -31,5 +31,27 @@
 }
 
 .reviews__buttons-wrap {
+  display: flex;
   margin-bottom: 30px;
+}
+
+.reviews__button {
+  padding: 0;
+  width: 50%;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+}
+
+.reviews__button--prev {
+  border-right: none;
+  background-image: url("../../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.reviews__button--next {
+  background-image: url("../../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
