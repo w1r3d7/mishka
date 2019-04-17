@@ -1,14 +1,10 @@
 body {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 20px;
   font-weight: normal;
-}
-
-.wrap {
-  width: 320px;
-  margin: 0 auto;
 }
 
 .container {
@@ -40,6 +36,7 @@ input[type="radio"].visually-hidden {
 
 .button {
   font: inherit;
+  box-sizing: border-box;
   padding: 15px 0;
   width: 100%;
   color: #444444;
@@ -47,4 +44,21 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   background-color: #ffffff;
   border: solid 2px #444444;
+}
+
+
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+  }
+
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 1180px) {
+  body {
+    width: 1180px;
+  }
 }

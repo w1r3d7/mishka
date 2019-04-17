@@ -1,14 +1,71 @@
 .features-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 .features-list__item {
+  position: relative;
+  order: 6;
+  width: 260px;
   padding-top: 60px;
+  margin-bottom: 30px;
 }
 
 .features-list__text {
   margin: 0;
   font-weight: bold;
+}
+
+.features-list__icon-flower,
+.features-list__icon-money,
+.features-list__icon-heart,
+.features-list__icon-ball,
+.features-list__icon-rocket,
+.features-list__icon-gift {
+  position: absolute;
+  top: 0;
+}
+
+.features-list__icon-flower path,
+.features-list__icon-money path,
+.features-list__icon-heart path,
+.features-list__icon-ball path,
+.features-list__icon-rocket path,
+.features-list__icon-gift path {
+  fill: #63d1bb;
+}
+
+
+@media (min-width: 768px) {
+  .features-list__item--flower {
+    order: 1;
+  }
+
+  .features-list__item--ball {
+    order: 2;
+  }
+
+  .features-list__item--money {
+    order: 3;
+  }
+
+  .features-list__item--rocket {
+    order: 4;
+  }
+
+  .features-list__item--heart {
+    order: 5;
+  }
+}
+
+@media (min-width: 1150px) {
+  .features-list {
+    padding: 0 175px;
+  }
+
+
 }

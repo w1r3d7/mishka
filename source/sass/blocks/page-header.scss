@@ -1,1 +1,153 @@
-/* not empty */
+.page-header__nav {
+  position: relative;
+}
+
+.page-header__logo {
+  display: block;
+  order: 1;
+  padding-top: 21px;
+  padding-bottom: 22px;
+  text-align: center;
+  border-bottom: 1px solid #ececec;
+  border-top: 1px solid #ececec;
+}
+
+.page-header__toggle {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 21px;
+  height: 20px;
+  background-color: #ffffff;
+  background-image: url("../../img/icon-menu-close.svg");
+  border: none;
+}
+
+.page-header__link {
+  position: relative;
+  display: flex;
+  order: 5;
+  padding-left: 76px;
+  min-height: 78px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__cart-icon {
+  position: absolute;
+  left: 30px;
+  opacity: 0.2;
+}
+
+.page-header__link-search {
+  order: 2;
+}
+
+.page-header__link-cart {
+  order: 3;
+}
+
+.page-header__search-icon {
+  position: absolute;
+  left: 30px;
+  opacity: 0.2;
+}
+
+.page-header__info {
+  display: none;
+}
+
+.page-header__nav--close > .page-header__link {
+  display: none;
+}
+
+.page-header__nav--close > .page-header__toggle {
+  width: 20px;
+  height: 14px;
+  background-image: url("../../img/icon-menu-open.svg");
+}
+
+.page-header__nav--no-js > .page-header__link {
+  display: flex;
+}
+
+.page-header__nav--no-js > .page-header__toggle {
+  width: 21px;
+  height: 20px;
+  background-image: url("../../img/icon-menu-close.svg");
+}
+
+
+@media (min-width:768px) {
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__nav--close > .page-header__link {
+    display: flex;
+  }
+
+  .page-header__nav {
+    height: 88px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  .page-header__logo {
+    padding: 0;
+    align-self: center;
+    margin-left: 50px;
+    margin-right: 208px;
+    border: none;
+  }
+
+  .page-header__link {
+    min-height: 88px;
+    z-index: 2;
+    border: none;
+  }
+
+  .page-header__link-search {
+    font-size: 0;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+  }
+
+  .page-header__info {
+    display: flex;
+    align-items: center;
+    order: 6;
+    margin-left: auto;
+    margin-right: 50px;
+    z-index: 2;
+  }
+
+  .page-header__info-new,
+  .page-header__info-sale {
+    display: none;
+  }
+
+  .page-header__info-delivery,
+  .page-header__link-catalog,
+  .page-header__link-form {
+    margin-top: 22px;
+    min-height: 0;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .page-header__link-catalog {
+    padding: 0;
+    margin-left: 50px;
+    margin-right: 37px;
+  }
+
+  .page-header__link-form {
+    padding: 0;
+  }
+
+}

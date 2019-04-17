@@ -2,64 +2,69 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="wrap">
-      <header class="page-header container">
-        <a class="page-header__logo" href="/" >
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип «Mishka»">
-        </a>
-        <nav class="page-header__nav main-nav">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        </nav>
-      </header>
-      <main class="page-main">
-        <section class="products">
-          <h1 class="products__title container">Каталог товаров</h1>
-          <ul class="products__list container">
-            <li class="products__item">
-              <img class="products__item-image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+    <header class="page-header container">
+      <a class="page-header__logo" href="/" >
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип «Mishka»">
+      </a>
+      <nav class="page-header__nav main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="products">
+        <h1 class="products__title">Каталог товаров</h1>
+        <ul class="products__list container">
+          <li class="products__item">
+            <img class="products__item-image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+            <div class="products__item-wrap">
               <h2 class="products__item-name">Зайчик-попрыгайчик</h2>
               <span class="products__item-specification">Рост 30см, вес 200 г</span>
               <b class="products__item-price">1 200 руб.</b>
               <button class="products__item-buy">Купить</button>
-            </li>
-            <li class="products__item">
-              <img class="products__item-image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
+            </div>
+          </li>
+          <li class="products__item">
+            <img class="products__item-image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
+            <div class="products__item-wrap">
               <h2 class="products__item-name">Корзинка для белья</h2>
               <span class="products__item-specification">Диаметр 15 см, высота 10 см</span>
               <b class="products__item-price">690 руб.</b>
               <button class="products__item-buy">Купить</button>
-            </li>
-            <li class="products__item">
-              <img class="products__item-image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
+            </div>
+          </li>
+          <li class="products__item">
+            <img class="products__item-image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
+            <div class="products__item-wrap">
               <h2 class="products__item-name">Большая корзинка для игрушек</h2>
               <span class="products__item-specification">Диаметр 30 см, высота 30 см</span>
               <b class="products__item-price">1 500 руб.</b>
               <button class="products__item-buy">Купить</button>
-            </li>
-          </ul>
-        </section>
-        <section class="production container">
-          <h2 class="production__title">Процесс производства</h2>
-          <img class="production__image" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Процесс производства"  />
-          <p class="production__text">По просьбам наших любимых фалловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <button class="production__order-button button" type="button">Сделать заказ</button>
-        </section>
-      </main>
-      <footer class="page-footer">
-        <ul class="page-footer__social">
-          <li class="page-footer__social-item"><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
-          <li class="page-footer__social-item"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-          <li class="page-footer__social-item"><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
+            </div>
+          </li>
         </ul>
-        <div class="page-footer__developed">
-          <span class="page-footer__developed-text">Разработано</span>
-          <a class="page-footer__developed-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
-        </div>
-      </footer>
-    </div>
+      </section>
+      <section class="production container">
+        <h2 class="production__title">Процесс производства</h2>
+        <img class="production__image" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Процесс производства"  />
+        <p class="production__text">По просьбам наших любимых фалловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <button class="production__order-button button" type="button">Сделать заказ</button>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <ul class="page-footer__social">
+        <li class="page-footer__social-item"><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+        <li class="page-footer__social-item"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li class="page-footer__social-item"><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
+      </ul>
+      <div class="page-footer__developed">
+        <span class="page-footer__developed-text">Разработано</span>
+        <a class="page-footer__developed-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+      </div>
+    </footer>
   </body>
 </html>
