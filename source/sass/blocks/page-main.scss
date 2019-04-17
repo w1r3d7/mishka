@@ -28,18 +28,18 @@
     background-image: url("../../img/hero-tablet@1x.jpg");
   }
 
-  .page-main__hero::after {
+  .page-main__hero::before {
     content: "";
     position: absolute;
-    width: 1180px;
-    height: 34px;
-    bottom: -10px;
-    left: -18px;
+    width: 100%;
+    height: 46px;
+    bottom: -16px;
+    left: 0px;
     background-image: url("../../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
     z-index: 2;
   }
 }
-
 
 @media (min-width: 1180px) {
   .page-main__title {
@@ -52,4 +52,6 @@
   .page-main__hero {
     background-image: url("../../img/hero-desktop@1x.jpg");
   }
+
+
 }
