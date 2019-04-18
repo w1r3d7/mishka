@@ -38,6 +38,7 @@
   &:focus {
     fill: #46c1ae;
   }
+
   &:active {
     opacity: 0.3;
   }
@@ -45,10 +46,12 @@
 
 .page-footer__developed-icon path {
   fill: #63d1bb;
+
   &:hover,
   &:focus {
     fill: #46c1ae;
   }
+
   &:active {
     opacity: 0.3;
   }
