@@ -46,20 +46,9 @@
 }
 
 .contacts__map {
-  position: relative;
-  margin-bottom: 30px;
+  height: 458px;
+  width: 100%;
 }
-
-.contacts__map::before {
-  content: "";
-  position: absolute;
-  top: 140px;
-  left: 140px;
-  width: 67px;
-  height: 100px;
-  background-image: url("../img/icon-map-pin.svg");
-}
-
 
 @media (min-width: 768px) {
   .contacts__title {

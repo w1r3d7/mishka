@@ -11,6 +11,24 @@
   padding: 0 30px;
   min-height: 103px;
   background-color: #63d1bb;
+
+  &:hover .popular-categories__icon-interior,
+  &:focus .popular-categories__icon-interior,
+  &:hover .popular-categories__icon-toy,
+  &:focus .popular-categories__icon-toy {
+    opacity: 0.7;
+  }
+
+  &:active .popular-categories__title,
+  &:active .popular-categories__icon-toy,
+  &:active .popular-categories__icon-interior {
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #59d5bc;
+  }
 }
 
 .popular-categories__icon-interior {
@@ -34,6 +52,11 @@
 
 .popular-categories__item--darken {
   background-color: #56c3b2;
+
+  &:hover,
+  &:focus {
+    background-color: #46c1ae;
+  }
 }
 
 .popular-categories__title {
@@ -52,5 +75,12 @@
     margin-top: -113px;
     flex-direction: row;
     padding: 0 50px;
+  }
+
+  .popular-categories__item {
+    &:hover,
+    &:focus {
+      margin-top: -5px;
+    }
   }
 }

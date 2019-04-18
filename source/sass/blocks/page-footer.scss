@@ -18,45 +18,47 @@
   list-style: none;
 }
 
-.page-footer__developed {
+.page-footer__developed-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 80px;
   padding: 0 39px;
   border-top: 1px solid #e5e5e5;
-}
 
-.page-footer__developed-text {
-  font-size: 19px;
-  line-height: 18px;
-  font-weight: bold;
-}
-
-.page-footer__social-icon path {
-  &:hover,
-  &:focus {
+  &:hover .page-footer__developed-icon path,
+  &:focus .page-footer__developed-icon path {
     fill: #46c1ae;
   }
 
+  &:active .page-footer__developed-icon,
   &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__developed-text {
+
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.page-footer__social-item {
+  &:hover .page-footer__social-icon path,
+  &:focus .page-footer__social-icon path {
+    fill: #46c1ae;
+  }
+
+  &:active .page-footer__social-icon path {
     opacity: 0.3;
   }
 }
 
 .page-footer__developed-icon path {
   fill: #63d1bb;
-
-  &:hover,
-  &:focus {
-    fill: #46c1ae;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
-
 
 @media (min-width: 768px) {
   .page-footer {

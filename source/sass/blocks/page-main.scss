@@ -31,12 +31,13 @@
   .page-main__hero::before {
     content: "";
     position: absolute;
-    width: 100%;
+    box-sizing: border-box;
+    width: 768px;
     height: 46px;
-    bottom: -16px;
+    bottom: -22px;
     left: 0;
     background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: no-repeat;
+    background-position-x: 20%;
     z-index: 2;
   }
 }

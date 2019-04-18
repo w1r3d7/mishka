@@ -10,6 +10,15 @@
   text-align: center;
   border-bottom: 1px solid #ececec;
   border-top: 1px solid #ececec;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__toggle {
@@ -34,6 +43,37 @@
   color: #000000;
   align-items: center;
   border-bottom: 1px solid #ececec;
+
+  &:hover .page-header__search-text,
+  &:focus .page-header__search-text,
+  &:focus .page-header__cart-text,
+  &:hover .page-header__cart-text,
+  &:hover .page-header__link-text,
+  &:focus .page-header__link-text {
+    opacity: 0.6;
+  }
+
+  &:hover .page-header__cart-icon,
+  &:focus .page-header__cart-icon,
+  &:focus .page-header__search-icon,
+  &:hover .page-header__search-icon {
+    opacity: 1;
+  }
+
+  &:hover .page-header__cart-icon path,
+  &:focus .page-header__cart-icon path,
+  &:focus .page-header__search-icon path,
+  &:hover .page-header__search-icon path {
+    fill: #63d1bb;
+  }
+
+  &:active .page-header__search-text,
+  &:active .page-header__cart-text,
+  &:active .page-header__search-icon,
+  &:active .page-header__cart-icon,
+  &:active .page-header__link-text {
+    opacity: 0.3;
+  }
 }
 
 .page-header__cart-icon {
@@ -133,19 +173,15 @@
   .page-header__info-delivery,
   .page-header__link-catalog,
   .page-header__link-form {
-    margin-top: 22px;
+    padding: 0;
+    padding-top: 22px;
     min-height: 0;
     font-size: 15px;
     line-height: 24px;
   }
 
   .page-header__link-catalog {
-    padding: 0;
     margin-left: 50px;
     margin-right: 37px;
-  }
-
-  .page-header__link-form {
-    padding: 0;
   }
 }
