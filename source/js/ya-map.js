@@ -13,4 +13,13 @@
             // от 0 (весь мир) до 19.
             zoom: 16
         });
+        var myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: '../img/icon-map-pin.svg',
+          iconImageSize: [66, 108],
+          iconImageOffset: [-35, -100]
+      });
+
+      myMap.geoObjects.add(myPlacemark);
+      myMap.controls.remove('zoomControl');
     }
