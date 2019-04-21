@@ -1,7 +1,24 @@
+.production__title-wrap {
+  position: relative;
+  padding: 20px 33px 20px 33px;
+  border: 1px solid #ececec;
+}
+
 .production__title {
+  margin: 0;
   font-size: 17px;
   line-height: 24px;
-  padding-left: 90px;
+  padding-left: 57px;
+}
+
+.production__title-icon {
+  position: absolute;
+  left: 33px;
+  top: 25px;
+}
+
+.production__title-icon path {
+  fill: #63d1bb;
 }
 
 .production__text {
