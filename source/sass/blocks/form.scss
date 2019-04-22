@@ -1,23 +1,33 @@
 .form__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 30px;
+  min-height: 178px;
   font-size: 27px;
   line-height: 30px;
+  background-color: #f1f1f1;
 }
 
 .form__text {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
 }
 
 .form__fieldset {
+  position: relative;
   margin: 0;
-  padding: 0;
+  padding: 10px 35px;
   border: none;
 }
 
 .form__legend {
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   font-size: 17px;
   line-height: 16px;
   color: #63d1bb;
@@ -26,12 +36,58 @@
 }
 
 .form__label {
+  position: relative;
   display: block;
   padding-left: 63px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
+}
+
+.form__fieldset--radio .form__label::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  top: -5px;
+  left: 0;
+  border-radius: 50%;
+  border: 2px solid #444444;
+}
+
+.form__fieldset--radio input:checked + .form__label::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: 14px;
+  top: 9px;
+  border-radius: 50%;
+  background-color: #62d1ba;
+}
+
+.form__fieldset--checkbox .form__label::before {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 35px;
+  top: -5px;
+  left: 0;
+  border: 2px solid #444444;
+}
+
+.form__fieldset--checkbox input:checked + .form__label::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 22px;
+  left: 14px;
+  top: 0;
+  border: 2px solid #444444;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
 }
 
 .form__input {
@@ -76,4 +132,36 @@
 
 .form__textarea::placeholder {
   color: rgba(68, 68, 68, 0.3);
+}
+
+@media (min-width: 768px) {
+  .form__title {
+    min-height: 240px;
+    font-size: 43px;
+    line-height: 50px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: center bottom;
+  }
+
+  .form__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form__label {
+    padding-left: 167px;
+  }
+
+  .form__legend {
+    position: absolute;
+  }
+
+  .form__fieldset {
+    padding: 50px 50px;
+  }
+
+  .form__fieldset--gray {
+    background-color: #f1f1f1;
+  }
 }
