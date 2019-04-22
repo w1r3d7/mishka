@@ -75,15 +75,19 @@
     min-height: 240px;
     font-size: 43px;
     line-height: 50px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: center bottom;
   }
 
   .products__item {
     display: flex;
     flex-direction: row;
+    width: 100%;
   }
 
-  .products__item-image {
-    margin-right: 28px;
+  .products__item-wrap {
+    flex-grow: 1;
   }
 }
 
