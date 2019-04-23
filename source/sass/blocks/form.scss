@@ -26,6 +26,7 @@
 }
 
 .form__legend {
+  position: relative;
   padding: 0;
   margin-bottom: 20px;
   font-size: 17px;
@@ -33,6 +34,17 @@
   color: #63d1bb;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+
+.form__legend::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 198px;
+  right: -210px;
+  top: 8px;
+  background-color: #63d1bb;
 }
 
 .form__label {
@@ -108,12 +120,60 @@
 .form__label--left {
   padding-left: 0;
   margin-bottom: 0;
+  padding-right: 26px;
 }
 
 .form__label--tiffany-color {
+  position: relative;
+  padding-right: 22px;
   line-height: 16px;
   color: #63d1bb;
   text-transform: uppercase;
+}
+
+.form__label--tiffany-color::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 198px;
+  right: 0;
+  top: 8px;
+  background-color: #63d1bb;
+}
+
+.form__label--email::after {
+  width: 179px;
+}
+
+.form__label--phone::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  opacity: 0.2;
+}
+
+.form__label--email::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 5px;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  opacity: 0.2;
+}
+
+.form__input {
+  padding-left: 20px;
+  padding-right: 40px;
 }
 
 .form__label--textarea {
@@ -149,16 +209,80 @@
     line-height: 30px;
   }
 
-  .form__label {
-    padding-left: 167px;
+  .form__fieldset--checkbox .form__label,
+  .form__fieldset--radio .form__label {
+    min-width: 165px;
+    padding-left: 83px;
+  }
+
+  .form__fieldset--checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__fieldset--radio .form__label::before,
+  .form__fieldset--checkbox .form__label::before {
+    left: 20px;
+  }
+
+  .form__fieldset--radio input:checked + .form__label::after,
+  .form__fieldset--checkbox input:checked + .form__label::after {
+    left: 34px;
   }
 
   .form__legend {
     position: absolute;
+    left: 50px;
+  }
+
+  .form__legend::after,
+  .form__label--tiffany-color::after {
+    content: none;
   }
 
   .form__fieldset {
-    padding: 50px 50px;
+    padding: 50px 50px 50px 217px;
+  }
+
+  .form__wrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .form__label--email + .form__input,
+  .form__label--phone + .form__input {
+    width: 500px;
+    background-color: #f1f1f1;
+  }
+
+  .form__fieldset--contacts,
+  .form__fieldset--textarea {
+    padding-left: 50px;
+  }
+
+
+
+  .form__fieldset--textarea .form__wrap:first-child {
+    margin-bottom: 52px;
+  }
+
+  .form__label--email::before,
+  .form__label--phone::before {
+    left: 630px;
+    top: -5px;
+  }
+
+  .form__textarea {
+    width: 500px;
+  }
+
+  .form__button {
+    width: 230px;
+  }
+
+  .form__text {
+    order: 2;
   }
 
   .form__fieldset--gray {
