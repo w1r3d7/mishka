@@ -53,4 +53,9 @@
   .page-main__hero {
     background-image: url("../img/hero-desktop@1x.jpg");
   }
+
+  .page-main__hero::before {
+    width: 1180px;
+    background-position-x: 50%;
+  }
 }

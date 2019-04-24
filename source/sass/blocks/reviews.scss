@@ -1,3 +1,7 @@
+.reviews {
+  padding: 0 30px;
+}
+
 .reviews__title {
   order: 1;
   margin: 0;
@@ -70,6 +74,8 @@
     flex-wrap: wrap;
     min-height: 377px;
     padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
   }
@@ -101,5 +107,11 @@
 
   .reviews__buttons-wrap {
     width: 168px;
+  }
+}
+
+@media (min-width: 1180px) {
+  .reviews {
+    padding-left: 225px;
   }
 }

@@ -185,3 +185,40 @@
     margin-right: 37px;
   }
 }
+
+@media (min-width: 1180px) {
+  .page-header__info {
+    width: 100%;
+    margin-left: 50px;
+  }
+
+  .page-header__info-new {
+    margin-right: 60px;
+  }
+
+  .page-header__info-delivery {
+    margin-left: auto;
+  }
+
+  .page-header__info-new,
+  .page-header__info-sale {
+    display: flex;
+    padding-top: 22px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+
+  .page-header__link-catalog {
+    padding-right: 35px;
+    border-right: 1px solid #ececec;
+  }
+
+  .page-header__link-catalog,
+  .page-header__link-form {
+    order: 0;
+    padding-top: 0;
+    font-size: 17px;
+    font-weight: bold;
+  }
+}

@@ -99,3 +99,29 @@
     top: 0;
   }
 }
+
+@media (min-width: 1180px) {
+  .popular-items {
+    flex-direction: column;
+  }
+
+  .popular-items__title-wrap {
+    width: 700px;
+    align-items: center;
+  }
+
+  .popular-items__table-wrap {
+    padding-left: 175px;
+  }
+
+
+  .popular-items__title {
+    order: 2;
+    margin: 0;
+  }
+
+  .popular-items__sign {
+    margin-bottom: 0;
+    padding: 0;
+  }
+}

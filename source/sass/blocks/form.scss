@@ -105,6 +105,8 @@
 .form__input {
   box-sizing: border-box;
   width: 100%;
+  padding-left: 20px;
+  padding-right: 40px;
   height: 52px;
   margin-bottom: 20px;
   font: inherit;
@@ -171,11 +173,6 @@
   opacity: 0.2;
 }
 
-.form__input {
-  padding-left: 20px;
-  padding-right: 40px;
-}
-
 .form__label--textarea {
   margin-bottom: 20px;
 }
@@ -205,6 +202,8 @@
   }
 
   .form__text {
+    padding-left: 50px;
+    padding-right: 50px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -261,8 +260,6 @@
     padding-left: 50px;
   }
 
-
-
   .form__fieldset--textarea .form__wrap:first-child {
     margin-bottom: 52px;
   }
@@ -281,11 +278,49 @@
     width: 230px;
   }
 
-  .form__text {
+  .form__condition {
     order: 2;
   }
 
   .form__fieldset--gray {
     background-color: #f1f1f1;
+  }
+}
+
+@media (min-width: 1180px) {
+  .form__text {
+    padding-left: 225px;
+    padding-right: 225px;
+  }
+
+  .form__legend {
+    left: 114px;
+  }
+
+  .form__label--email,
+  .form__label--phone,
+  .form__label--textarea {
+    padding-left: 61px;
+  }
+
+  .form__fieldset--contacts .form__wrap,
+  .form__fieldset--textarea .form__wrap {
+    width: 875px;
+  }
+
+  .form__wrap,
+  .form__label--email + .form__input,
+  .form__label--phone + .form__input,
+  .form__textarea {
+    width: 700px;
+  }
+
+  .form__label--email::before,
+  .form__label--phone::before {
+    left: 830px;
+  }
+
+  .form__button {
+    margin-left: 175px;
   }
 }

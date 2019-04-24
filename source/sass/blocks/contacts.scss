@@ -1,5 +1,6 @@
-.contacts {
-  padding-bottom: 30px;
+.contacts__info-wrap,
+.contacts__button-wrap {
+  padding: 0 30px;
 }
 
 .contacts__title {
@@ -51,6 +52,11 @@
 }
 
 @media (min-width: 768px) {
+  .contacts__info-wrap,
+  .contacts__button-wrap {
+    padding: 0 50px;
+  }
+
   .contacts__title {
     margin-bottom: 50px;
     font-size: 43px;
@@ -88,5 +94,35 @@
 
   .contacts__button-wrap {
     display: flex;
+  }
+}
+
+@media (min-width: 1180px) {
+  .contacts {
+    padding: 0 50px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacts__info-wrap {
+    width: 350px;
+    padding: 0;
+    padding-left: 175px;
+  }
+
+  .contacts__map {
+    width: 525px;
+  }
+
+  .contacts__button-wrap {
+    position: absolute;
+    bottom: 100px;
+    padding-left: 175px;
+  }
+
+  .contacts__title::after {
+    left: -100px;
   }
 }

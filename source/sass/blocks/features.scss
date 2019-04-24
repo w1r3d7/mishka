@@ -12,3 +12,9 @@
     line-height: 50px;
   }
 }
+
+@media (min-width: 1180px) {
+  .features__title {
+    margin-left: 175px;
+  }
+}
