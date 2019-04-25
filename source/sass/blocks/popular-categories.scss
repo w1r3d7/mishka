@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-top: -5px;
 }
 
 .popular-categories__item {
@@ -34,7 +35,7 @@
 .popular-categories__icon-interior {
   position: absolute;
   right: 35px;
-  top: 30px;
+  top: 24px;
   opacity: 0.5;
 }
 
@@ -61,7 +62,7 @@
 
 .popular-categories__title {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 25px;
   width: 130px;
   font-size: 19px;
   line-height: 24px;

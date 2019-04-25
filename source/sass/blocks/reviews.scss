@@ -1,11 +1,12 @@
 .reviews {
+  position: relative;
   padding: 0 30px;
 }
 
 .reviews__title {
   order: 1;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-size: 25px;
   line-height: 30px;
 }
@@ -13,7 +14,7 @@
 .reviews__text {
   order: 3;
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 26px;
   font-size: 15px;
   line-height: 30px;
   color: #444444;
@@ -24,13 +25,15 @@
 }
 
 .reviews__reviewer-name {
+  display: block;
+  margin-bottom: 4px;
   font-size: 17px;
   line-height: 24px;
 }
 
 .reviews__reviewer-instagram {
   display: block;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   font-size: 17px;
   line-height: 30px;
   color: #444444;
@@ -39,10 +42,11 @@
 .reviews__buttons-wrap {
   display: flex;
   order: 5;
-  margin-bottom: 30px;
+  margin-bottom: 38px;
 }
 
 .reviews .button {
+  margin-bottom: 48px;
   order: 2;
 }
 
