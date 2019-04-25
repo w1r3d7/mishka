@@ -33,9 +33,13 @@
 
 @media (min-width: 768px) {
   .page-main__title {
-    padding-top: 160px;
+    padding-top: 152px;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .page-main__categories {
+    margin-bottom: 16px;
   }
 
   .page-main__hero {
@@ -49,14 +53,15 @@
     box-sizing: border-box;
     width: 768px;
     height: 46px;
-    bottom: -22px;
+    bottom: -34px;
     left: 0;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-position-x: 20%;
+    background-size: 768px 22px;
     z-index: 2;
   }
 
-  .page-main__categories {
+  .page-main__popular-items {
     margin-bottom: 50px;
   }
 }

@@ -41,6 +41,20 @@
 
 
 @media (min-width: 768px) {
+  .features-list {
+    justify-content: none;
+  }
+
+  .features-list__item {
+    width: 334px;
+    margin-bottom: 50px;
+  }
+
+  .features-list__text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
   .features-list__item--flower {
     order: 1;
   }

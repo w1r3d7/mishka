@@ -56,6 +56,8 @@
 }
 
 .popular-items__picture {
+  width: 260px;
+  height: 315px;
   margin-bottom: 20px;
 }
 
@@ -70,10 +72,30 @@
 
 
 @media (min-width: 768px) {
+  .popular-items {
+    padding-bottom: 66px;
+  }
+
   .popular-items__title {
     margin-bottom: 0;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .popular-items__about {
+    margin-bottom: 34px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .popular-items__price {
+    margin-bottom: 34px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .popular-items__specification {
+    margin-bottom: 56px;
   }
 
   .popular-items__sign {
@@ -89,20 +111,19 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .popular-items__table-wrap {
-    position: relative;
     width: 290px;
   }
 
   .popular-items__picture {
     position: absolute;
-    left: 384px;
-    top: 0;
+    top: 136px;
     width: 333px;
     height: 404px;
+    right: 50px;
   }
 }
 

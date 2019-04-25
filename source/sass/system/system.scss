@@ -65,6 +65,7 @@ input[type="radio"].visually-hidden {
   width: 319px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-size: 319px 6px;
+  background-position: bottom 20%;
 }
 
 
@@ -75,6 +76,13 @@ input[type="radio"].visually-hidden {
 
   .container {
     padding: 0 50px;
+  }
+
+  .zigzag-line {
+    width: 771px;
+    height: 15px;
+    background-size: 771px 15px;
+    background-position: 18px;
   }
 }
 
