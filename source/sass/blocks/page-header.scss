@@ -125,6 +125,11 @@
     display: none;
   }
 
+  .page-header__logo-image {
+    width: 112px;
+    height: 46px;
+  }
+
   .page-header__nav--close > .page-header__link {
     display: flex;
   }
@@ -186,10 +191,19 @@
   }
 }
 
-@media (min-width: 1180px) {
+@media (min-width: 1150px) {
   .page-header__info {
     width: 100%;
     margin-left: 50px;
+  }
+
+  .page-header__logo {
+    margin-right: 100px;
+  }
+
+  .page-header__logo-image {
+    width: 149px;
+    height: 72px;
   }
 
   .page-header__info-new {

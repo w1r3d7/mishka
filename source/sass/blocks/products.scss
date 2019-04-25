@@ -96,6 +96,10 @@
     min-height: 280px;
   }
 
+  .products__list {
+    justify-content: space-between;
+  }
+
   .products__item {
     width: 316px;
     flex-direction: column;

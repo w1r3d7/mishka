@@ -40,9 +40,13 @@
     background-position-x: 20%;
     z-index: 2;
   }
+
+  .page-main__categories {
+    margin-bottom: 50px;
+  }
 }
 
-@media (min-width: 1180px) {
+@media (min-width: 1150px) {
   .page-main__title {
     width: 700px;
     margin: 0 auto;
@@ -55,7 +59,7 @@
   }
 
   .page-main__hero::before {
-    width: 1180px;
+    width: 1150px;
     background-position-x: 50%;
   }
 }

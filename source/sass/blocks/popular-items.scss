@@ -70,12 +70,14 @@
 
 @media (min-width: 768px) {
   .popular-items__title {
+    margin-bottom: 0;
     font-size: 43px;
     line-height: 50px;
   }
 
   .popular-items__sign {
     width: 120px;
+    margin-bottom: 0;
     padding-top: 10px;
     line-height: 17px;
     text-align: center;
@@ -86,6 +88,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
   }
 
   .popular-items__table-wrap {
@@ -95,14 +98,24 @@
 
   .popular-items__picture {
     position: absolute;
-    right: -334px;
+    left: 384px;
     top: 0;
+    width: 333px;
+    height: 404px;
   }
 }
 
-@media (min-width: 1180px) {
+@media (min-width: 1150px) {
   .popular-items {
     flex-direction: column;
+  }
+
+  .popular-items__picture {
+    width: 525px;
+    height: 636px;
+    left: 584px;
+    top: -100px;
+    z-index: -1;
   }
 
   .popular-items__title-wrap {
@@ -118,6 +131,8 @@
   .popular-items__title {
     order: 2;
     margin: 0;
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .popular-items__sign {
