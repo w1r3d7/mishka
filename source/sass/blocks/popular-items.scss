@@ -1,4 +1,5 @@
 .popular-items {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 42px;
@@ -6,14 +7,14 @@
 
 .popular-items__title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
 }
 
 .popular-items__sign {
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
@@ -24,7 +25,7 @@
 .popular-items__title-wrap {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 28px;
 }
 
 .popular-items__about {
@@ -46,21 +47,23 @@
 .popular-items__specification tr {
   display: flex;
   align-items: center;
-  min-height: 39px;
+  min-height: 38px;
   border-bottom: 1px solid #ececec;
 }
 
 .popular-items__specification td:first-child {
-  width: 100px;
+  width: 92px;
 }
 
 .popular-items__picture {
+  width: 260px;
+  height: 315px;
   margin-bottom: 20px;
 }
 
 .popular-items__price {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-size: 17px;
   line-height: 24px;
   text-align: center;
@@ -69,13 +72,35 @@
 
 
 @media (min-width: 768px) {
+  .popular-items {
+    padding-bottom: 66px;
+  }
+
   .popular-items__title {
+    margin-bottom: 0;
     font-size: 43px;
     line-height: 50px;
   }
 
+  .popular-items__about {
+    margin-bottom: 34px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .popular-items__price {
+    margin-bottom: 34px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .popular-items__specification {
+    margin-bottom: 56px;
+  }
+
   .popular-items__sign {
     width: 120px;
+    margin-bottom: 0;
     padding-top: 10px;
     line-height: 17px;
     text-align: center;
@@ -86,16 +111,54 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 50px;
   }
 
   .popular-items__table-wrap {
-    position: relative;
     width: 290px;
   }
 
   .popular-items__picture {
     position: absolute;
-    right: -334px;
-    top: 0;
+    top: 136px;
+    width: 333px;
+    height: 404px;
+    right: 50px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .popular-items {
+    flex-direction: column;
+  }
+
+  .popular-items__picture {
+    width: 525px;
+    height: 636px;
+    left: 575px;
+    top: -100px;
+    z-index: -1;
+  }
+
+  .popular-items__title-wrap {
+    width: 700px;
+    align-items: center;
+  }
+
+  .popular-items__table-wrap {
+    padding-left: 175px;
+  }
+
+
+  .popular-items__title {
+    order: 2;
+    margin: 0;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .popular-items__sign {
+    margin-bottom: 0;
+    padding: 0;
   }
 }
