@@ -202,6 +202,8 @@
   }
 
   .form__text {
+    width: 668px;
+    margin: 0 auto;
     padding-left: 50px;
     padding-right: 50px;
     font-size: 17px;
@@ -240,7 +242,10 @@
   }
 
   .form__fieldset {
+    box-sizing: border-box;
+    width: 768px;
     padding: 50px 50px 50px 217px;
+    margin: 0 auto;
   }
 
   .form__wrap {
@@ -289,12 +294,17 @@
 
 @media (min-width: 1150px) {
   .form__text {
+    width: 700px;
     padding-left: 225px;
     padding-right: 225px;
   }
 
   .form__legend {
     left: 114px;
+  }
+
+  .form__fieldset {
+    width: 1150px;
   }
 
   .form__label--email,
