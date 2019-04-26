@@ -1,5 +1,6 @@
-.page-header__nav {
+.page-header__nav-wrap {
   position: relative;
+  margin: 0 auto;
 }
 
 .page-header__logo {
@@ -36,6 +37,8 @@
   position: relative;
   display: flex;
   order: 5;
+  width: 238px;
+  margin: 0 auto;
   padding-left: 82px;
   min-height: 78px;
   line-height: 24px;
@@ -100,21 +103,21 @@
   display: none;
 }
 
-.page-header__nav--close > .page-header__link {
+.page-header__nav-wrap--close > .page-header__link {
   display: none;
 }
 
-.page-header__nav--close > .page-header__toggle {
+.page-header__nav-wrap--close > .page-header__toggle {
   width: 20px;
   height: 14px;
   background-image: url("../img/icon-menu-open.svg");
 }
 
-.page-header__nav--no-js > .page-header__link {
+.page-header__nav-wrap--no-js > .page-header__link {
   display: flex;
 }
 
-.page-header__nav--no-js > .page-header__toggle {
+.page-header__nav-wrap--no-js > .page-header__toggle {
   width: 21px;
   height: 20px;
   background-image: url("../img/icon-menu-close.svg");
@@ -130,26 +133,31 @@
     height: 46px;
   }
 
-  .page-header__nav--close > .page-header__link {
+  .page-header__nav-wrap--close > .page-header__link {
     display: flex;
   }
 
-  .page-header__nav {
+  .page-header {
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  .page-header__nav-wrap {
+    width: 668px;
     height: 88px;
     display: flex;
     flex-wrap: wrap;
-    border-bottom: 1px solid #e7e7e7;
   }
 
   .page-header__logo {
     padding: 0;
     align-self: center;
-    margin-left: 50px;
     margin-right: 208px;
     border: none;
   }
 
   .page-header__link {
+    width: auto;
+    margin: 0;
     min-height: 88px;
     z-index: 2;
     border: none;
@@ -166,13 +174,22 @@
     align-items: center;
     order: 6;
     margin-left: auto;
-    margin-right: 50px;
     z-index: 2;
   }
 
   .page-header__info-new,
   .page-header__info-sale {
     display: none;
+    color: #000000;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .page-header__info-delivery,
@@ -186,19 +203,22 @@
   }
 
   .page-header__link-catalog {
-    margin-left: 50px;
-    margin-right: 37px;
+    margin-right: 36px;
   }
 }
 
 @media (min-width: 1150px) {
+  .page-header__nav-wrap {
+    width: 1050px;
+  }
+
   .page-header__info {
     width: 100%;
-    margin-left: 50px;
   }
 
   .page-header__logo {
-    margin-right: 100px;
+    margin-left: auto;
+    margin-right: 104px;
   }
 
   .page-header__logo-image {

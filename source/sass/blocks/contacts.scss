@@ -1,6 +1,8 @@
 .contacts__info-wrap,
 .contacts__button-wrap {
   padding: 0 30px;
+  margin: 0 auto;
+  width: 260px;
 }
 
 .contacts__title {
@@ -57,6 +59,7 @@
   .contacts__info-wrap,
   .contacts__button-wrap {
     padding: 0 50px;
+    width: 668px;
   }
 
   .contacts__title {
@@ -101,11 +104,13 @@
 
 @media (min-width: 1150px) {
   .contacts {
-    padding: 0 50px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0 50px;
   }
 
   .contacts__info-wrap {
@@ -120,6 +125,7 @@
 
   .contacts__button-wrap {
     position: absolute;
+    width: auto;
     bottom: 100px;
     padding-left: 175px;
   }

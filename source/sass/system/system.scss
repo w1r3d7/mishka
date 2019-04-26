@@ -1,6 +1,5 @@
 body {
-  width: 320px;
-  margin: 0 auto;
+  min-width: 320px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 20px;
@@ -9,6 +8,8 @@ body {
 
 .container {
   padding: 0 30px;
+  width: 260px;
+  margin: 0 auto;
 }
 
 img {
@@ -60,34 +61,33 @@ input[type="radio"].visually-hidden {
 .zigzag-line {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
   height: 6px;
   width: 319px;
+  margin: 0 auto;
   background-image: url("../img/bg-zigzag-line.svg");
   background-size: 319px 6px;
   background-position: bottom 20%;
+  transform: translateX(-50%);
 }
 
 
 @media (min-width: 768px) {
-  body {
-    width: 768px;
-  }
-
   .container {
     padding: 0 50px;
+    width: 668px;
   }
 
   .zigzag-line {
-    width: 771px;
+    width: 768px;
     height: 15px;
-    background-size: 771px 15px;
+    background-size: 768px 15px;
     background-position: 18px;
   }
 }
 
 @media (min-width: 1150px) {
-  body {
-    width: 1150px;
+  .container {
+    width: 1050px;
   }
 }

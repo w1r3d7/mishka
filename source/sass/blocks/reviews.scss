@@ -1,6 +1,9 @@
 .reviews {
   position: relative;
+  width: 260px;
+  margin: 0 auto;
   padding: 0 30px;
+  padding-bottom: 50px;
 }
 
 .reviews__title {
@@ -76,6 +79,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 668px;
+    margin: 0 auto;
     min-height: 377px;
     padding-top: 80px;
     padding-left: 50px;
@@ -116,6 +121,7 @@
 
 @media (min-width: 1150px) {
   .reviews {
+    width: 875px;
     padding-left: 225px;
   }
 }
