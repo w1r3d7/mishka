@@ -127,8 +127,7 @@
   }
 }
 
-@media (min-resolution: 144dpi),
-       (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .reviews {
     background-image: url("../img/review@2x.jpg");
   }
