@@ -3,14 +3,16 @@
   margin: 0 auto;
 }
 
-.page-header__logo {
+.page-header__logo-wrap {
   display: block;
   order: 1;
   padding-top: 21px;
   padding-bottom: 19px;
+  margin: 0 auto;
   text-align: center;
   border-bottom: 1px solid #ececec;
   border-top: 1px solid #ececec;
+
 
   &:hover,
   &:focus {
@@ -146,8 +148,9 @@
     flex-wrap: wrap;
   }
 
-  .page-header__logo {
+  .page-header__logo-wrap {
     padding: 0;
+    width: auto;
     align-self: center;
     margin-right: 208px;
     border: none;
@@ -214,7 +217,7 @@
     width: 100%;
   }
 
-  .page-header__logo {
+  .page-header__logo-wrap {
     margin-left: auto;
     margin-right: 104px;
   }
