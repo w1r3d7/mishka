@@ -33,6 +33,17 @@
   border: none;
 }
 
+.page-header__search-icon {
+  width: 18px;
+  height: 17px;
+}
+
+
+.page-header__cart-icon {
+  width: 21px;
+  height: 18px;
+}
+
 .page-header__link {
   position: relative;
   display: flex;
@@ -63,10 +74,10 @@
     opacity: 1;
   }
 
-  &:hover .page-header__cart-icon path,
-  &:focus .page-header__cart-icon path,
-  &:focus .page-header__search-icon path,
-  &:hover .page-header__search-icon path {
+  &:hover .page-header__cart-icon,
+  &:focus .page-header__cart-icon,
+  &:focus .page-header__search-icon,
+  &:hover .page-header__search-icon {
     fill: #63d1bb;
   }
 
