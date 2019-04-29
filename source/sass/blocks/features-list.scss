@@ -28,17 +28,38 @@
 .features-list__icon-gift {
   position: absolute;
   top: 0;
-}
-
-.features-list__icon-flower path,
-.features-list__icon-money path,
-.features-list__icon-heart path,
-.features-list__icon-ball path,
-.features-list__icon-rocket path,
-.features-list__icon-gift path {
   fill: #63d1bb;
 }
 
+.features-list__icon-flower {
+  width: 32px;
+  height: 37px;
+}
+
+.features-list__icon-money {
+  width: 47px;
+  height: 27px;
+}
+
+.features-list__icon-heart {
+  width: 35px;
+  height: 34px;
+}
+
+.features-list__icon-ball {
+  width: 35px;
+  height: 34px;
+}
+
+.features-list__icon-rocket {
+  width: 55px;
+  height: 23px;
+}
+
+.features-list__icon-gift {
+  width: 33px;
+  height: 32px;
+}
 
 @media (min-width: 768px) {
   .features-list {
