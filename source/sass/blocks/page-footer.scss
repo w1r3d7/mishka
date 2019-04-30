@@ -29,7 +29,7 @@
     fill: #46c1ae;
   }
 
-  &:active .page-footer__developed-icon,
+  &:active .page-footer__developed-icon path,
   &:active {
     opacity: 0.3;
   }
@@ -44,17 +44,17 @@
 }
 
 .page-footer__social-item {
-  &:hover .page-footer__social-icon path,
-  &:focus .page-footer__social-icon path {
+  &:hover .page-footer__social-icon,
+  &:focus .page-footer__social-icon {
     fill: #46c1ae;
   }
 
-  &:active .page-footer__social-icon path {
+  &:active .page-footer__social-icon {
     opacity: 0.3;
   }
 }
 
-.page-footer__developed-icon path {
+.page-footer__developed-icon {
   fill: #63d1bb;
 }
 
