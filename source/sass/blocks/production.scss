@@ -27,18 +27,34 @@
 }
 
 .production__image-wrap {
+  position: relative;
   order: 1;
 }
 
-.production__image-wrap::before {
-  content: "";
+.production__image-button {
   position: absolute;
+  padding: 0;
   width: 100px;
   height: 76px;
-  right: 110px;
-  top: 130px;
+  left: 43%;
+  top: 45%;
+  transform-origin: 50% 50%;
+  transition: 0.5s;
   background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+
 }
 
 .production__image {
