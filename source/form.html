@@ -56,21 +56,23 @@
           <input class="form__radio visually-hidden" id="kids-toys" type="radio" name="type">
           <label class="form__label" for="kids-toys">Детская игрушка</label>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--gray form__fieldset--checkbox">
-          <legend class="form__legend">Цвет</legend>
-          <input class="form__checkbox visually-hidden" id="white" type="checkbox" name="white" checked="">
-          <label class="form__label" for="white">Белый</label>
-          <input class="form__checkbox visually-hidden" id="gray" type="checkbox" name="gray" checked="">
-          <label class="form__label" for="gray">Серый</label>
-          <input class="form__checkbox visually-hidden" id="tiffany" type="checkbox" name="tiffany">
-          <label class="form__label" for="tiffany">«Тиффани»</label>
-          <input class="form__checkbox visually-hidden" id="black" type="checkbox" name="black">
-          <label class="form__label" for="black">Черный</label>
-          <input class="form__checkbox visually-hidden" id="pink" type="checkbox" name="pink">
-          <label class="form__label" for="pink">Розовый</label>
-          <input class="form__checkbox visually-hidden" id="orange" type="checkbox" name="orange">
-          <label class="form__label" for="orange">Оранжевый</label>
-        </fieldset>
+        <div class="form__fieldset-wrap--gray">
+          <fieldset class="form__fieldset form__fieldset--checkbox">
+            <legend class="form__legend">Цвет</legend>
+            <input class="form__checkbox visually-hidden" id="white" type="checkbox" name="white" checked="">
+            <label class="form__label" for="white">Белый</label>
+            <input class="form__checkbox visually-hidden" id="gray" type="checkbox" name="gray" checked="">
+            <label class="form__label" for="gray">Серый</label>
+            <input class="form__checkbox visually-hidden" id="tiffany" type="checkbox" name="tiffany">
+            <label class="form__label" for="tiffany">«Тиффани»</label>
+            <input class="form__checkbox visually-hidden" id="black" type="checkbox" name="black">
+            <label class="form__label" for="black">Черный</label>
+            <input class="form__checkbox visually-hidden" id="pink" type="checkbox" name="pink">
+            <label class="form__label" for="pink">Розовый</label>
+            <input class="form__checkbox visually-hidden" id="orange" type="checkbox" name="orange">
+            <label class="form__label" for="orange">Оранжевый</label>
+          </fieldset>
+        </div>
         <fieldset class="form__fieldset">
           <legend class="form__legend">ФИО</legend>
           <div class="form__wrap">
@@ -86,14 +88,22 @@
             <input class="form__input" id="middle-name" type="text" name="middle-name" placeholder="Отчество, если желаете">
           </div>
         </fieldset>
-        <div class="form__fieldset form__fieldset--contacts form__fieldset--gray">
-          <div class="form__wrap">
-            <label class="form__label form__label--left form__label--tiffany-color form__label--phone" for="phone">Тел</label>
-            <input class="form__input" id="phone" type="text" name="phone" placeholder="+7 XXX XXX XX XX*" required="">
-          </div>
+        <div class="form__fieldset-wrap--gray">
+          <div class="form__fieldset form__fieldset--contacts">
+            <div class="form__wrap">
+              <label class="form__label form__label--left form__label--tiffany-color form__label--phone" for="phone">Тел</label>
+              <input class="form__input" id="phone" type="text" name="phone" placeholder="+7 XXX XXX XX XX*" required="">
+              <svg class="form__input-icon" width="25" height="24">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+            </div>
           <div class="form__wrap">
             <label class="form__label form__label--left form__label--tiffany-color form__label--email" for="email">E-mail</label>
             <input class="form__input" id="email" type="email" name="email" placeholder="Ваш Email*" required="">
+            <svg class="form__input-icon" width="32" height="32">
+              <use xlink:href="#icon-mail"></use>
+            </svg>
+          </div>
           </div>
         </div>
         <div class="form__fieldset form__fieldset--textarea">
