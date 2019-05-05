@@ -59,6 +59,15 @@
   height: 50px;
   background-color: #ffffff;
   border: 1px solid #ececec;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__button--prev {
@@ -127,7 +136,8 @@
   }
 }
 
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-width: 768px) and (min-resolution: 144dpi),
+  (min-width: 768px) and (min-resolution: 1.5dppx) {
   .reviews {
     background-image: url("../img/review@2x.jpg");
   }
