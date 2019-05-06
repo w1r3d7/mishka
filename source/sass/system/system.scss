@@ -59,16 +59,12 @@ input[type="radio"].visually-hidden {
 }
 
 .zigzag-line {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
+  display: block;
   height: 6px;
   width: 319px;
-  margin: 0 auto;
+  margin: 20px auto;
   background-image: url("../img/bg-zigzag-line.svg");
   background-size: 319px 6px;
-  background-position: bottom 20%;
-  transform: translateX(-50%);
 }
 
 @media (min-width: 768px) {
@@ -81,12 +77,18 @@ input[type="radio"].visually-hidden {
     width: 768px;
     height: 15px;
     background-size: 768px 15px;
-    background-position: 18px;
   }
 }
 
 @media (min-width: 1150px) {
   .container {
     width: 1050px;
+  }
+
+  .zigzag-line {
+    width: 1050px;
+    height: 23px;
+    background-repeat: no-repeat;
+    background-size: 1050px 23px;
   }
 }
