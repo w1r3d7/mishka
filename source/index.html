@@ -170,6 +170,22 @@
           <button class="button" type="button">Напишите нам</button>
         </div>
       </section>
+      <div class="modal container">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
+          <div class="modal__form-wrap">
+            <input class="visually-hidden" id="size-s" type="radio" name="size" checked>
+            <label class="modal__form-size" for="size-s"><span class="modal__form-size-label">s</span></label>
+            <input class="visually-hidden" id="size-m" type="radio" name="size">
+            <label class="modal__form-size" for="size-m"><span class="modal__form-size-label">m</span></label>
+            <input class="visually-hidden" id="size-l" type="radio" name="size">
+            <label class="modal__form-size" for="size-l"><span class="modal__form-size-label">l</span></label>
+          </div>
+          <button class="modal__form-submit" type="submit">Добавить</button>
+        </form>
+      </div>
+      <div class="modal__overlay"></div>
     </main>
     <footer class="page-footer">
       <div class="container">
