@@ -58,13 +58,20 @@ input[type="radio"].visually-hidden {
   }
 }
 
-.zigzag-line {
-  display: block;
+.zigzag {
+  position: relative;
+}
+
+.zigzag::after {
+  content: "";
+  position: absolute;
+  width: 320px;
   height: 6px;
-  width: 319px;
-  margin: 20px auto;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-size: 319px 6px;
+  bottom: 0;
+  left: 0;
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-size: 320px 6px;
+
 }
 
 @media (min-width: 768px) {
@@ -73,10 +80,11 @@ input[type="radio"].visually-hidden {
     width: 668px;
   }
 
-  .zigzag-line {
+  .zigzag::after {
     width: 768px;
     height: 15px;
     background-size: 768px 15px;
+    background-position: 20px;
   }
 }
 
@@ -85,10 +93,10 @@ input[type="radio"].visually-hidden {
     width: 1050px;
   }
 
-  .zigzag-line {
+  .zigzag::after {
     width: 1050px;
     height: 23px;
-    background-repeat: no-repeat;
     background-size: 1050px 23px;
+    left: 50px;
   }
 }
