@@ -1,9 +1,5 @@
 .reviews {
   position: relative;
-  width: 260px;
-  margin: 0 auto;
-  padding: 0 30px;
-  padding-bottom: 50px;
 }
 
 .reviews__title {
@@ -17,7 +13,7 @@
 .reviews__text {
   order: 3;
   margin: 0;
-  padding-bottom: 26px;
+  padding-bottom: 28px;
   font-size: 15px;
   line-height: 30px;
   color: #444444;
@@ -36,7 +32,7 @@
 
 .reviews__reviewer-instagram {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   font-size: 17px;
   line-height: 30px;
   color: #444444;
@@ -45,7 +41,7 @@
 .reviews__buttons-wrap {
   display: flex;
   order: 5;
-  margin-bottom: 38px;
+  margin-bottom: 36px;
 }
 
 .reviews .button {
@@ -56,7 +52,7 @@
 .reviews__button {
   padding: 0;
   width: 50%;
-  height: 50px;
+  height: 52px;
   background-color: #ffffff;
   border: 1px solid #ececec;
   cursor: pointer;
@@ -95,6 +91,7 @@
     padding-top: 80px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 86px;
     background-image: url("../img/review@1x.jpg");
     background-size: 350px auto;
     background-repeat: no-repeat;
@@ -108,13 +105,15 @@
   }
 
   .reviews__text {
-    padding-top: 40px;
     font-size: 17px;
+    padding-top: 7px;
+    margin-bottom: 18px;
   }
 
   .reviews .button {
     width: 175px;
-    align-self: center;
+    margin-bottom: 25px;
+    align-self: baseline;
   }
 
   .reviews__button {

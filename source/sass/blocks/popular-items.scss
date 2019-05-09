@@ -38,16 +38,17 @@
 
 .popular-items__specification {
   width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   font-size: 15px;
   line-height: 20px;
   color: #444444;
+  border-spacing: 0;
 }
 
 .popular-items__specification tr {
   display: flex;
   align-items: center;
-  min-height: 38px;
+  min-height: 39px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -83,7 +84,7 @@
   }
 
   .popular-items__about {
-    margin-bottom: 34px;
+    margin-bottom: 36px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -101,7 +102,8 @@
   .popular-items__sign {
     width: 120px;
     margin-bottom: 0;
-    padding-top: 10px;
+    margin-right: 3px;
+    padding-top: 5px;
     line-height: 17px;
     text-align: center;
   }
@@ -111,7 +113,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   .popular-items__table-wrap {
@@ -120,7 +122,7 @@
 
   .popular-items__picture {
     position: absolute;
-    top: 136px;
+    top: 134px;
     width: 333px;
     height: 404px;
     right: 50px;
