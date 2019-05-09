@@ -46,6 +46,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   background-color: #ffffff;
   border: solid 2px #444444;
+  cursor: pointer;
 
   &:hover,
   &:focus {
