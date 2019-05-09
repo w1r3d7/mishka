@@ -2,10 +2,21 @@
   position: relative;
 }
 
+.production__wrap {
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
 .production__title-wrap {
   position: relative;
-  order: 2;
   padding: 20px 33px 20px 33px;
+  margin-bottom: 150px;
   border: 1px solid #ececec;
 }
 
@@ -27,7 +38,8 @@
 }
 
 .production__image-wrap {
-  position: relative;
+  position: absolute;
+  top: 89px;
   order: 1;
 }
 
@@ -36,9 +48,9 @@
   padding: 0;
   width: 100px;
   height: 76px;
-  left: 43%;
-  top: 45%;
-  transform-origin: 50% 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   transition: 0.5s;
   background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
@@ -48,11 +60,11 @@
 
   &:hover,
   &:focus {
-    transform: scale(1.2);
+    transform: translate(-50%, -50%) scale(1.2);
   }
 
   &:active {
-    transform: scale(0.8);
+    transform: translate(-50%, -50%) scale(0.8);
     opacity: 0.3;
   }
 }
@@ -64,7 +76,6 @@
 .production__text-wrap {
   order: 3;
   padding: 30px 33px 30px 33px;
-  margin-bottom: 56px;
   border: 1px solid #ececec;
   border-top: none;
 }
@@ -85,11 +96,22 @@
 
   .production__title-wrap {
     border-bottom: none;
+    margin-bottom: 0;
   }
 
   .products__image {
     width: 668px;
     height: 455px;
+  }
+
+  .production__wrap {
+    order: 1;
+  }
+
+  .production__image-wrap {
+    position: relative;
+    top: 0;
+    order: 0;
   }
 
   .production__image-wrap::before {
@@ -102,6 +124,7 @@
 @media (min-width: 1150px) {
   .production {
     min-height: 455px;
+    flex-direction: row;
   }
 
   .production__title-icon {
@@ -122,7 +145,6 @@
     min-height: 170px;
     padding-left: 80px;
     padding-right: 56px;
-    margin-left: auto;
   }
 
   .production__text-wrap {
@@ -132,16 +154,11 @@
     padding-top: 0;
     padding-left: 80px;
     padding-right: 56px;
-    margin-left: auto;
   }
 
   .production__text {
     margin-bottom: 60px;
     font-size: 15px;
     line-height: 30px;
-  }
-
-  .production__image-wrap {
-    position: absolute;
   }
 }
