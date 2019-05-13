@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous" />
   <script src="http://api-maps.yandex.ru/2.1/?apikey=7bc69057-e81e-4df2-ae21-0155f0176fc8&lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
@@ -96,7 +98,7 @@
           <img class="popular-items__picture" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки">
         </picture>
         <b class="popular-items__price">Цена: 990 руб.</b>
-        <button class="popular-items__button button" type="button">Заказать</button>
+        <a class="popular-items__button button" href="#">Заказать</a>
       </div>
     </section>
     <section class="page-main__features features container">
@@ -169,22 +171,6 @@
         <button class="button" type="button">Напишите нам</button>
       </div>
     </section>
-    <div class="modal container">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__text">Выберите размер:</p>
-      <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
-        <div class="modal__form-wrap">
-          <input class="visually-hidden" id="size-s" type="radio" name="size" checked>
-          <label class="modal__form-size" for="size-s"><span class="modal__form-size-label">s</span></label>
-          <input class="visually-hidden" id="size-m" type="radio" name="size">
-          <label class="modal__form-size" for="size-m"><span class="modal__form-size-label">m</span></label>
-          <input class="visually-hidden" id="size-l" type="radio" name="size">
-          <label class="modal__form-size" for="size-l"><span class="modal__form-size-label">l</span></label>
-        </div>
-        <button class="modal__form-submit" type="submit">Добавить</button>
-      </form>
-    </div>
-    <div class="modal__overlay"></div>
   </main>
   <footer class="page-footer">
     <div class="container">
@@ -230,6 +216,23 @@
       </a>
     </div>
   </footer>
+  <div class="modal">
+    <div class="modal-wrap container">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
+        <div class="modal__form-wrap">
+          <input class="visually-hidden" id="size-s" type="radio" name="size" checked>
+          <label class="modal__form-size" for="size-s"><span class="modal__form-size-label">s</span></label>
+          <input class="visually-hidden" id="size-m" type="radio" name="size">
+          <label class="modal__form-size" for="size-m"><span class="modal__form-size-label">m</span></label>
+          <input class="visually-hidden" id="size-l" type="radio" name="size">
+          <label class="modal__form-size" for="size-l"><span class="modal__form-size-label">l</span></label>
+        </div>
+        <button class="modal__form-submit" type="submit">Добавить</button>
+      </form>
+    </div>
+  </div>
   <script src="js/script.js"></script>
   <script src="js/ya-map.js"></script>
   <script src="js/picturefill.min.js"></script>

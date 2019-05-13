@@ -1,6 +1,14 @@
 .modal {
-  position: fixed;
+  position: relative;
   display: none;
+}
+
+.modal--active {
+  display: block;
+}
+
+.modal-wrap {
+  position: fixed;
   z-index: 11;
   top: 50%;
   left: 50%;
@@ -9,9 +17,9 @@
   background-color: #ffffff;
 }
 
-.modal__overlay {
+.modal::after {
+  content: "";
   position: fixed;
-  display: none;
   z-index: 10;
   top: 0;
   left: 0;
