@@ -20,6 +20,7 @@
   align-items: center;
   justify-content: space-between;
   width: 141px;
+  height: 80px;
   min-height: 82px;
   margin: 0 auto;
   padding: 0;
@@ -32,6 +33,7 @@
   justify-content: space-around;
   width: 214px;
   margin: 0 auto;
+  height: 70px;
   min-height: 80px;
   border-top: 1px solid #e5e5e5;
 
@@ -77,8 +79,9 @@
 @media (min-width: 768px) {
   .page-footer .container {
     display: flex;
-    align-items: center;
+    height: 50px;
     min-height: 142px;
+    align-items: center;
   }
 
   .page-footer__developed-link {

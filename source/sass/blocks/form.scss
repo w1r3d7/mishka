@@ -4,6 +4,7 @@
   align-items: center;
   margin: 0;
   margin-bottom: 30px;
+  height: 100px;
   min-height: 178px;
   font-size: 27px;
   line-height: 30px;
@@ -282,7 +283,12 @@
   .form__wrap {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+  }
+
+
+  .form__wrap input,
+  .form__wrap textarea {
+    margin-left: auto;
   }
 
   .form__label--email + .form__input,
