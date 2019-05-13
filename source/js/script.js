@@ -2,18 +2,18 @@
 
 var nav = document.querySelector(".page-header__nav-wrap");
 var navButton = document.querySelector(".page-header__toggle");
-var map = document.querySelector(".contacts__map");
 var modal = document.querySelector(".modal");
-var modalButton = document.querySelector(".popular-items__button");
+var modalButton = document.querySelectorAll(".modal-open");
 
 
 nav.classList.remove("page-header__nav-wrap--no-js");
-map.classList.remove("contacts__map--no-js");
 
-modalButton.addEventListener ("click", function(evt){
-  evt.preventDefault()
-  modal.classList.add("modal--active");
+for (var i = 0; i < modalButton.length; i++) {
+modalButton[i].addEventListener('click', function(evt){
+  evt.preventDefault();
+  modal.classList.add('modal--active');
 });
+}
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
@@ -30,4 +30,4 @@ navButton.addEventListener ("click", function(){
   } else {
     nav.classList.add("page-header__nav-wrap--close");
   }
-})
+});

@@ -25,6 +25,7 @@
 }
 
 .products__item-wrap {
+  position: relative;
   padding: 22px 28px 0 28px;
   border: 1px solid #ededed;
 
@@ -44,6 +45,7 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+  color: #000000;
 
   &:hover,
   &:focus {
@@ -81,6 +83,7 @@
   padding: 0;
   opacity: 0.2;
   cursor: pointer;
+  background-color: #ffffff;
 }
 
 .products__item-buy:hover,
@@ -116,11 +119,21 @@
   .products__item-wrap {
     flex-grow: 1;
   }
+
+  .products__price-wrap {
+    position: absolute;
+    width: 269px;
+    bottom: 0;
+  }
 }
 
 @media (min-width: 1150px) {
   .products__title {
     min-height: 280px;
+  }
+
+  .products__item-wrap {
+    padding-bottom: 72px;
   }
 
   .products__list {

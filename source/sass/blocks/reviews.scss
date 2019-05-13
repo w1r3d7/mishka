@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.reviews.container {
+  padding-bottom: 50px;
+}
+
 .reviews__title {
   order: 1;
   margin: 0;
@@ -13,7 +17,7 @@
 .reviews__text {
   order: 3;
   margin: 0;
-  padding-bottom: 28px;
+  margin-bottom: 26px;
   font-size: 15px;
   line-height: 30px;
   color: #444444;
@@ -45,7 +49,6 @@
 }
 
 .reviews .button {
-  margin-bottom: 48px;
   order: 2;
 }
 
@@ -85,9 +88,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 668px;
+    width: 768px;
+    min-height: 458px;
+    box-sizing: border-box;
     margin: 0 auto;
-    min-height: 377px;
+    margin-bottom: 64px;
     padding-top: 80px;
     padding-left: 50px;
     padding-right: 50px;
@@ -97,17 +102,20 @@
     background-repeat: no-repeat;
   }
 
+  .reviews.container {
+    padding-bottom: 98px;
+  }
+
   .reviews__title {
     width: 334px;
-    margin-bottom: 0;
+    margin-bottom: 48px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .reviews__text {
     font-size: 17px;
-    padding-top: 7px;
-    margin-bottom: 18px;
+    margin-bottom: 57px;
   }
 
   .reviews .button {
@@ -117,7 +125,13 @@
   }
 
   .reviews__button {
+    position: relative;
+    top: 3px;
     border: none;
+  }
+
+  .reviews__button--prev {
+    left: -4px;
   }
 
   .reviews__reviewer-name {

@@ -55,6 +55,9 @@
 }
 
 .page-footer__social-item {
+  position: relative;
+  left: -3px;
+
   &:hover .page-footer__social-icon,
   &:focus .page-footer__social-icon {
     fill: #46c1ae;
@@ -66,6 +69,8 @@
 }
 
 .page-footer__developed-icon {
+  position: relative;
+  bottom: 3px;
   fill: #63d1bb;
 }
 
@@ -77,12 +82,21 @@
   }
 
   .page-footer__developed-link {
+    position: relative;
+    top: 7px;
     width: 184px;
     justify-content: space-between;
+    margin: 0;
     border: none;
   }
 
   .page-footer__logo {
     display: block;
+    margin-right: 83px;
   }
+
+  .page-footer__social-item {
+    top: 5px;
+  }
+
 }

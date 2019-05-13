@@ -1,5 +1,8 @@
     // Функция ymaps.ready() будет вызвана, когда
     // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    var map = document.querySelector(".contacts__map");
+    map.classList.remove("contacts__map--no-js");
+
     ymaps.ready(init);
     function init(){
         // Создание карты.

@@ -12,9 +12,11 @@
   z-index: 11;
   top: 50%;
   left: 50%;
-  min-height: 336px;
+  padding: 35px 30px 46px 30px;
+  min-height: 255px;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
+  border: 1px solid #c6c6c6;
 }
 
 .modal::after {
@@ -30,6 +32,7 @@
 
 .modal__title {
   margin: 0;
+  margin-bottom: 24px;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
@@ -39,6 +42,7 @@
 
 .modal__text {
   margin: 0;
+  margin-bottom: 26px;
   font-size: 15px;
   line-height: 30px;
   text-align: center;
@@ -47,6 +51,7 @@
 .modal__form-wrap {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .modal__form-wrap input:checked + .modal__form-size {
