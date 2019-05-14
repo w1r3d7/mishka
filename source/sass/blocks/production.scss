@@ -15,13 +15,14 @@
 
 .production__title-wrap {
   position: relative;
-  padding: 20px 33px 20px 33px;
-  margin-bottom: 150px;
+  padding: 22px 33px;
+  margin-bottom: 146px;
   border: 1px solid #ececec;
 }
 
 .production__title {
   margin: 0;
+  margin-top: 4px;
   font-size: 17px;
   line-height: 24px;
   padding-left: 57px;
@@ -30,7 +31,7 @@
 .production__title-icon {
   position: absolute;
   left: 33px;
-  top: 25px;
+  top: 30px;
 }
 
 .production__title-icon path {
@@ -39,7 +40,7 @@
 
 .production__image-wrap {
   position: absolute;
-  top: 89px;
+  top: 97px;
   order: 1;
 }
 
@@ -82,7 +83,7 @@
 
 .production__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
@@ -118,6 +119,27 @@
     left: 334px;
     top: 190px;
   }
+
+  .production__title {
+    margin: 13px 0 0;
+    padding-left: 74px;
+    font-size: 20px;
+  }
+
+  .production__text {
+    margin: 0 0 35px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .production__text-wrap {
+    padding: 10px 41px;
+    margin-bottom: 36px;
+  }
+
+  .production__title-icon {
+    left: 41px;
+  }
 }
 
 
@@ -130,11 +152,12 @@
   .production__title-icon {
     position: relative;
     margin-bottom: 20px;
-    top: 0;
+    top: 20px;
     left: 0;
   }
 
   .production__title {
+    margin-top: 18px;
     padding-left: 0;
     width: 150px;
   }
@@ -142,8 +165,8 @@
   .production__title-wrap {
     box-sizing: border-box;
     width: 368px;
-    min-height: 170px;
-    padding-left: 80px;
+    min-height: 178px;
+    padding-left: 77px;
     padding-right: 56px;
   }
 
@@ -152,13 +175,17 @@
     width: 368px;
     min-height: 285px;
     padding-top: 0;
-    padding-left: 80px;
+    padding-left: 77px;
     padding-right: 56px;
   }
 
   .production__text {
-    margin-bottom: 60px;
+    margin-bottom: 45px;
     font-size: 15px;
     line-height: 30px;
+  }
+
+  .production__image-button {
+    top: 46%;
   }
 }

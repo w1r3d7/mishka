@@ -9,9 +9,9 @@
   justify-content: center;
   align-items: center;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   height: 100px;
-  min-height: 178px;
+  min-height: 174px;
   font-size: 27px;
   line-height: 30px;
   background-color: #f1f1f1;
@@ -22,12 +22,12 @@
 }
 
 .products__item {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .products__item-wrap {
   position: relative;
-  padding: 22px 28px 0 28px;
+  padding: 26px 28px 0 28px;
   border: 1px solid #ededed;
 
   &:hover,
@@ -60,7 +60,7 @@
 
 .products__item-specification {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   font-size: 13px;
   line-height: 30px;
   color: #444444;
@@ -70,7 +70,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 22px;
-  padding-bottom: 25px;
+  padding-bottom: 27px;
   border-top: 1px solid #ececec;
 }
 
@@ -104,45 +104,82 @@
 @media (min-width: 768px) {
   .products__title {
     min-height: 240px;
+    margin-bottom: 64px;
     font-size: 43px;
     line-height: 50px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-position: center bottom;
+    background-size: 768px;
   }
 
   .products__item {
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-bottom: 55px;
+  }
+
+  .products__item-specification {
+    font-size: 15px;
+  }
+
+  .products__item-name {
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .products__item-wrap {
-    flex-grow: 1;
+    width: 335px;
+    box-sizing: border-box;
+    padding: 26px 26px 0;
   }
 
   .products__price-wrap {
     position: absolute;
     width: 269px;
     bottom: 0;
+    left: 30px;
+  }
+
+  .products__item-price {
+    font-size: 17px;
   }
 }
 
 @media (min-width: 1150px) {
   .products__title {
-    min-height: 280px;
+    min-height: 245px;
+    padding-bottom: 24px;
+    margin-bottom: 112px;
+    font-size: 53px;
+    line-height: 57px;
+    background-size: 1150px;
   }
 
   .products__item-wrap {
-    padding-bottom: 72px;
+    flex-grow: 1;
+    width: 316px;
+    padding-bottom: 68px;
   }
 
   .products__list {
     justify-content: space-between;
+    margin-bottom: 57px;
   }
 
   .products__item {
     width: 316px;
     flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .products__price-wrap {
+    width: 256px;
+    left: 25px;
+  }
+
+  .products__item-name {
+    width: 240px;
   }
 }
