@@ -147,13 +147,32 @@
   .reviews {
     width: 1150px;
     padding-left: 225px;
+    margin-bottom: 73px;
     background-position-x: 50px;
   }
 
   .reviews__title {
+    position: relative;
+    top: -9px;
+    right: 4px;
+    margin-bottom: 39px;
     font-size: 53px;
     line-height: 57px;
   }
+
+  .reviews.container {
+    padding-bottom: 152px;
+  }
+
+  .reviews__text {
+    width: 770px;
+    margin-bottom: 39px;
+  }
+
+  .reviews__reviewer-name {
+    font-size: 17px;
+  }
+
 }
 
 @media (min-width: 768px) and (min-resolution: 144dpi),

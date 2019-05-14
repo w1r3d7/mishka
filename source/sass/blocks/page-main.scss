@@ -97,8 +97,21 @@
 
   .page-main__hero::before {
     height: 34px;
-    background-size: 1150px 34px;
+    bottom: -17px;
+    background-size: 1250px 34px;
     background-position-x: 50%;
+  }
+
+  .page-main__categories {
+    margin-bottom: 96px;
+  }
+
+  .page-main__popular-items {
+    margin-bottom: 58px;
+  }
+
+  .page-main__features {
+    margin-bottom: 41px;
   }
 }
 

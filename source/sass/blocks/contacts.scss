@@ -165,7 +165,14 @@
     justify-content: space-between;
     width: 1050px;
     margin: 0 auto;
+    margin-bottom: 50px;
     padding: 0 50px;
+  }
+
+  .contacts__title {
+    margin-top: 69px;
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .contacts__info-wrap {
@@ -185,13 +192,14 @@
   .contacts__button-wrap {
     position: absolute;
     width: auto;
-    bottom: 100px;
-    left: 46px;
+    bottom: 53px;
+    left: 50px;
     padding-left: 175px;
   }
 
   .contacts__title::after {
-    left: -100px;
+    left: -107px;
+    top: -7px;
   }
 }
 

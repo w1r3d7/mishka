@@ -201,6 +201,7 @@
     padding: 0;
     padding-top: 18px;
     min-height: 0;
+    height: auto;
     font-size: 15px;
     line-height: 24px;
   }
@@ -230,7 +231,7 @@
   }
 
   .page-header__info-new {
-    margin-right: 60px;
+    margin-right: 62px;
   }
 
   .page-header__info-delivery {
@@ -240,7 +241,7 @@
   .page-header__info-new,
   .page-header__info-sale {
     display: flex;
-    padding-top: 22px;
+    padding-top: 18px;
     font-size: 15px;
     line-height: 24px;
     font-weight: bold;

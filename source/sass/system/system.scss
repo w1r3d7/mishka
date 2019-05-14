@@ -38,7 +38,7 @@ input[type="radio"].visually-hidden {
 .button {
   display: block;
   font: inherit;
-  font-size: 17px;
+  font-size: 18px;
   box-sizing: border-box;
   padding: 15px 0 14px 0;
   width: 100%;
@@ -88,6 +88,10 @@ input[type="radio"].visually-hidden {
     background-size: 768px 15px;
     background-position: 20px;
   }
+
+  .button {
+    font-size: 17px;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -100,5 +104,9 @@ input[type="radio"].visually-hidden {
     height: 23px;
     background-size: 1050px 23px;
     left: 50px;
+  }
+
+  .button {
+    font-size: 18px;
   }
 }

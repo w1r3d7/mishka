@@ -132,13 +132,14 @@
 @media (min-width: 1150px) {
   .popular-items {
     flex-direction: column;
+    padding-bottom: 96px;
   }
 
   .popular-items__picture {
     width: 525px;
     height: 636px;
     left: 575px;
-    top: -100px;
+    top: -25px;
     z-index: -1;
   }
 
@@ -151,6 +152,17 @@
     padding-left: 175px;
   }
 
+  .popular-items__about {
+    margin-bottom: 47px;
+  }
+
+  .popular-items__specification td:first-child {
+    width: 95px;
+  }
+
+  .popular-items__specification {
+    margin-bottom: 111px;
+  }
 
   .popular-items__title {
     order: 2;
@@ -160,6 +172,9 @@
   }
 
   .popular-items__sign {
+    position: relative;
+    top: 2px;
+    left: 22px;
     margin-bottom: 0;
     padding: 0;
   }
