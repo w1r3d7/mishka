@@ -125,6 +125,7 @@
   }
 
   .products__item-name {
+    width: 230px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -177,9 +178,5 @@
   .products__price-wrap {
     width: 256px;
     left: 25px;
-  }
-
-  .products__item-name {
-    width: 240px;
   }
 }

@@ -6,8 +6,8 @@
   display: none;
 }
 
-.page-footer__logo:hover path,
-.page-footer__logo:focus path {
+.page-footer__logo:hover,
+.page-footer__logo:focus {
   fill: #46c1ae;
 }
 
@@ -37,12 +37,12 @@
   min-height: 80px;
   border-top: 1px solid #e5e5e5;
 
-  &:hover .page-footer__developed-icon path,
-  &:focus .page-footer__developed-icon path {
+  &:hover .page-footer__developed-icon,
+  &:focus .page-footer__developed-icon {
     fill: #46c1ae;
   }
 
-  &:active .page-footer__developed-icon path,
+  &:active .page-footer__developed-icon,
   &:active {
     opacity: 0.3;
   }
@@ -77,7 +77,7 @@
 }
 
 @media (min-width: 768px) {
-  .page-footer .container {
+  .page-footer__wrap {
     display: flex;
     height: 50px;
     min-height: 142px;
