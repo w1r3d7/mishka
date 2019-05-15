@@ -67,20 +67,6 @@
     background-position-y: -1px;
   }
 
-  .page-main__hero::before {
-    content: "";
-    position: absolute;
-    box-sizing: border-box;
-    width: 100%;
-    height: 22px;
-    bottom: -11px;
-    left: 0;
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-size: 768px 22px;
-    background-repeat: repeat-x;
-    z-index: 2;
-  }
-
   .page-main__popular-items {
     margin-bottom: 50px;
   }
@@ -104,13 +90,6 @@
   .page-main__hero {
     background-image: url("../img/hero-desktop@1x.jpg");
     background-size: 1150px auto;
-  }
-
-  .page-main__hero::before {
-    height: 34px;
-    bottom: -17px;
-    background-size: 1250px 34px;
-    background-position-x: 50%;
   }
 
   .page-main__categories {
