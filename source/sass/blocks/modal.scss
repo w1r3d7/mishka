@@ -9,14 +9,17 @@
 
 .modal-wrap {
   position: fixed;
+  box-sizing: border-box;
   z-index: 11;
+  width: 320px;
   top: 50%;
   left: 50%;
-  padding: 35px 30px 46px 30px;
+  padding: 29px 30px 46px 30px;
   min-height: 255px;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
   border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
 }
 
 .modal::after {
@@ -86,4 +89,25 @@
   border: none;
   background-color: #63d1bb;
   color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .modal-wrap {
+    width: 566px;
+    padding: 30px 105px 46px 105px;
+  }
+
+  .modal__title {
+    margin-bottom: 12px;
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal__form-size {
+    width: 112px;
+  }
+
+  .modal__text {
+    font-size: 17px;
+  }
 }

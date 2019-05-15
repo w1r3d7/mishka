@@ -1,12 +1,12 @@
 'use strict';
 
-var nav = document.querySelector(".page-header__nav-wrap");
-var navButton = document.querySelector(".page-header__toggle");
-var modal = document.querySelector(".modal");
-var modalButton = document.querySelectorAll(".modal-open");
+var nav = document.querySelector('.page-header__nav-wrap');
+var navButton = document.querySelector('.page-header__toggle');
+var modal = document.querySelector('.modal');
+var modalButton = document.querySelectorAll('.modal-open');
 
 
-nav.classList.remove("page-header__nav-wrap--no-js");
+nav.classList.remove('page-header__nav-wrap--no-js');
 
 for (var i = 0; i < modalButton.length; i++) {
 modalButton[i].addEventListener('click', function(evt){
@@ -24,10 +24,10 @@ window.addEventListener('keydown', function (evt) {
   }
 });
 
-navButton.addEventListener ("click", function(){
-  if (nav.classList.contains("page-header__nav-wrap--close")){
-    nav.classList.remove("page-header__nav-wrap--close")
+navButton.addEventListener ('click', function(){
+  if (nav.classList.contains('page-header__nav-wrap--close')){
+    nav.classList.remove('page-header__nav-wrap--close')
   } else {
-    nav.classList.add("page-header__nav-wrap--close");
+    nav.classList.add('page-header__nav-wrap--close');
   }
 });
